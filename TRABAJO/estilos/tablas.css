@@ -1,0 +1,25 @@
+/* TABLAS*/
+
+.tabla {
+    width: 80%; 
+    margin: 30px auto; 
+    border-collapse: collapse; 
+    text-align: center;
+    font-size: 18px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #b1ae00;
+    padding: 10px;
+}
+
+.tabla th {
+    background-color: #B97700;
+    color: white;
+    font-weight: bold;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: #A56B00; 
+    color:#2E2E2E;
+}

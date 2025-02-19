@@ -1,0 +1,40 @@
+/* QUERIES + ANIMACIONES*/
+@media (max-width: 480px) {
+    .izquierda, .derecha {
+        width: 30vw;  
+        max-width: 150px;
+        display: block;
+        position: static;
+        margin: 10px auto; 
+    }
+    .imagen-filosofos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-filosofos {
+        flex-direction: column;
+    }
+    .contenedor-botones {
+        gap: 20px;
+    }
+    .carousel-inner img {
+        max-height: 300px;
+    }
+}
+
+/* ANIMACIONES */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8); /* Empieza más pequeño */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Llega a su tamaño normal */
+    }
+}
+
+.zoom-in {
+    opacity: 0;
+    animation: zoomIn 0.8s ease-out forwards;
+}

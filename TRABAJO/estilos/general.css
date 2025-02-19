@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #2E2E2E !important; 
+    color: #FFCC80 !important;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #6A0DAD; 
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    align-items: center;
+}
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    color: #FFCC80;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid transparent;  
+    border-radius: 5px;  
+    background-color: #2E2E2E; 
+}
+
+li a:hover:not(.active) {
+    background-color: #1A1A1A; 
+}
+
+.active {
+    background-color: #04AA6D;
+    border: 2px solid #04AA6D;  
+}
+
+li a:not(.active) {
+    border: 2px solid #4CAF50;  
+}
+
+.bienvenida, .descripcion {
+    text-align: center;
+}
+
+.filosofo2 {
+    text-align: center;
+    font-size: 33px; 
+    padding: 10px 40px; 
+}
+
+.izquierda, .derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15vw; 
+    max-width: 200px; 
+    height: auto;
+}
+
+.izquierda {
+    left: -20vw;
+}
+
+.derecha {
+    right: -20vw;
+}
+
+.imagen-filosofos {
+    width: 100vw;  
+    height: auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  
+}
+
+.imagen-filosofos img {
+    width: 100vw;  
+    height: auto;  
+    object-fit: cover; 
+    max-width: none;
+}
