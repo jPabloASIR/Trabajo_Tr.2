@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/general.css"/>
+        <link rel="stylesheet" href="estilos/queries.css"/>
+        <link rel="stylesheet" href="estilos/tablas.css"/>
+        <link rel="stylesheet" href="estilos/test.css"/>
+        <link rel="stylesheet" href="estilos/botones.css"/>
+        <title>El Río de la Filosofía - Aristóteles</title>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    
+        <script>
+            function mostrarMensaje(id) {
+                let contenedores = document.querySelectorAll('.contenedor-texto');
+            
+                contenedores.forEach(contenedor => {
+                    let texto = contenedor.querySelector('.texto');
+
+                    if(texto.id === id){
+                        if (!contenedor.classList.contains("show")) {
+                            contenedores.forEach(c => c.classList.remove("show"));
+                            contenedor.classList.add("show");
+                            contenedor.scrollIntoView({behavior:"smooth", block:"start"});
+                        }
+                        else {
+                            contenedor.classList.remove("show");
+                        }
+                                        }
+                        else {
+                            contenedor.classList.remove("show");
+                             }
+                    
+                                                    }
+                                    )
+                                        }
+        </script>
+    
+    </head>
+
+
+    <body>
+        <ul>
+            <li><a href="index.html" id="indexBtn">PRINCIPAL</a></li>
+            <li class="nav-buttons">
+                <a href="platon.html" id="platonBtn">Platón</a>
+                <a href="socrates.html" id="socratesBtn">Sócrates</a>
+                <a href="aristoteles.html" id="aristotelesBtn">Aristóteles</a>
+            </li>
+    
+            <li><a href="formulario.html" id="formularioBtn">FORMULARIO</a></li>
+        </ul>
+
+        <div class="bienvenida zoom-in">
+            <h1><span style="color: #FF9800;"><b>El Río de la Filosofía</b></span></h1>
+            <p>"Aristóteles, El Arquitecto del Conocimiento"</p>
+        </div>
+
+        <!-- IMAGEN -->
+
+
+        <div class="zoom-in" style="display: flex; flex-direction: column; align-items: center;">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/-lZMMWq-U6w" frameborder="0" allowfullscreen> </iframe>
+        </div>
+
+
+        <div class="zoom-in" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px">
+            <audio controls>
+                <source src="audio/DocumentalAristóteles.mp3" type="audio/mpeg">
+                No se pudo reproducir el audio.
+            </audio>
+        </div>
+
+        <br>
+
+        <div class="contenedor-nuevos-botones">
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('basesFilosofia')">Bases de su Filosofía</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('obras')">Obras</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('vidaPersonal')">Vida Personal</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('masInformacion')">Más Información</button>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="basesFilosofia" class="texto">
+                La filosofía de Aristóteles se basa en el estudio de la naturaleza, la lógica y la metafísica. A diferencia de su maestro Platón, 
+                Aristóteles defendía un enfoque más empírico y observacional de la realidad. Creía que el conocimiento se adquiría a través de la 
+                experiencia y la razón, en lugar de ideas innatas o preexistentes.<br><br>
+
+                Uno de sus conceptos clave fue la teoría del hilemorfismo, que establece que todo objeto está compuesto por materia y forma. 
+                También introdujo la causalidad aristotélica, explicando que todo fenómeno tiene cuatro causas: material, formal, eficiente y final.<br><br> 
+
+                Además, Aristóteles desarrolló el estudio de la lógica formal, creando el silogismo, un sistema de razonamiento basado en premisas 
+                y conclusiones. Su legado influyó profundamente en la ciencia, la ética y la política, estableciendo las bases del pensamiento occidental.<br><br>
+
+                En la época del rey Arquelao I de Macedonia, al ser su padre médico del rey Amintas III de Macedonia, ambos residieron 
+                en Pella, y Aristóteles no pudo permanecer mucho tiempo en aquel lugar, ya que sus padres murieron cuando él era aún 
+                muy joven, y se trasladó probablemente a Atarneo. En 367 a. C., cuando Aristóteles tenía 17 años, falleció su padre, 
+                y se hizo cargo de él su tutor Proxeno de Atarneo, que lo envió a Atenas, por entonces un importante centro intelectual 
+                del mundo griego, para que estudiase en la Academia de Platón. Allí permaneció por veinte años.
+            </p>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <table id="obras" class="tabla texto">
+                <thead>
+                    <tr>
+                        <th>Nombre de la Obra</th>
+                        <th>Fecha</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Ética a Nicómaco</td><td>350 a.C.</td><td>Ética</td></tr>
+                    <tr><td>Ética Eudemia</td><td>349 a.C.</td><td>Ética</td></tr>
+                    <tr><td>Gran moral</td><td>347 a.C.</td><td>Ética</td></tr>
+                    <tr><td>Metafísica</td><td>340 a.C.</td><td>Filosofía</td></tr>
+                    <tr><td>Política</td><td>335 a.C.</td><td>Filosofía política</td></tr>
+                    <tr><td>Retórica</td><td>330 a.C.</td><td>Lenguaje</td></tr>
+                    <tr><td>Poética</td><td>330 a.C.</td><td>Estética</td></tr>
+                    <tr><td>Organon</td><td>322 a.C.</td><td>Lógica</td></tr>
+                    <tr><td>Analíticos primeros</td><td>320 a.C.</td><td>Lógica</td></tr>
+                    <tr><td>Analíticos segundos</td><td>318 a.C.</td><td>Lógica</td></tr>
+                    <tr><td>Física</td><td>315 a.C.</td><td>Ciencia</td></tr>
+                    <tr><td>Sobre el alma</td><td>312 a.C.</td><td>Psicología</td></tr>
+                    <tr><td>Historia de los animales</td><td>310 a.C.</td><td>Biología</td></tr>
+                    <tr><td>Partes de los animales</td><td>308 a.C.</td><td>Biología</td></tr>
+                    <tr><td>Movimiento de los animales</td><td>306 a.C.</td><td>Biología</td></tr>
+                    <tr><td>Generación de los animales</td><td>304 a.C.</td><td>Biología</td></tr>
+                    <tr><td>Problemas</td><td>300 a.C.</td><td>Miscelánea</td></tr>
+                    <tr><td>Mecánica</td><td>298 a.C.</td><td>Física</td></tr>
+                    <tr><td>Los meteorológicos</td><td>296 a.C.</td><td>Ciencias Naturales</td></tr>
+                    <tr><td>Metafísica</td><td>340 a.C.</td><td>Filosofía</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="vidaPersonal" class="texto">
+                <b>Vida</b><br>
+                Aristóteles nació en 384 a. C. o 383 a. C., durante el primer año de la olimpiada XCIX en la ciudad de Estagira, 
+                la actual Stavros (razón por la cual se lo apodó el Estagirita), no lejos del actual Monte Athos, en la península 
+                Calcídica, entonces perteneciente al Reino de Macedonia (actual región de Macedonia de Grecia). Su padre, Nicómaco, 
+                pertenecía a la corporación de los asclepiadeos, es decir, que profesaba la medicina, y fue médico del rey Amintas III 
+                de Macedonia, hecho que explica su relación con la corte real de Macedonia, que tendría una importante influencia en su 
+                vida; y su madre, Festis, era oriunda de Calcis y también estaba vinculada a los asclepiadeos.<br><br>
+        
+                En la época del rey Arquelao I de Macedonia, al ser su padre médico del rey Amintas III de Macedonia, ambos residieron 
+                en Pella, y Aristóteles no pudo permanecer mucho tiempo en aquel lugar, ya que sus padres murieron cuando él era aún 
+                muy joven, y se trasladó probablemente a Atarneo. En 367 a. C., cuando Aristóteles tenía 17 años, falleció su padre, 
+                y se hizo cargo de él su tutor Proxeno de Atarneo, que lo envió a Atenas, por entonces un importante centro intelectual 
+                del mundo griego, para que estudiase en la Academia de Platón. Allí permaneció por veinte años.<br><br>
+        
+                <b>Período en la Academia</b><br>
+                Para completar la educación de Aristóteles, Proxeno lo envió a Atenas para inscribirle a la Academia, habiéndose 
+                extendido ya su fama y la de Platón por el mundo griego.<br><br>
+        
+                Aristóteles conoció a Platón cuando tenía 17 años de edad, y permaneció en la Academia desde 367 o 366 a. C. hasta 
+                347 o 346 a. C., justo con el momento en el que coincide el segundo viaje que realizó Platón a Sicilia. Debido a que 
+                Aristóteles acudió a la Academia durante su periodo de máximo esplendor, pudo desarrollarse de forma adecuada.<br><br>
+        
+                <b>Formación de su filosofía</b><br>
+                Tras la muerte de Platón en 347 a. C., Aristóteles dejó Atenas. La historia tradicional registra que Aristóteles partió 
+                por su decepción de que la dirección de la Academia pasara al sobrino de Platón, Espeusipo, aunque esto es improbable, 
+                pues un macedonio no podía heredar bienes atenienses. Es posible que temiera los sentimientos contra los macedonios en 
+                Atenas en ese momento y se fue antes de la muerte de Platón.
+            </p>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="masInformacion" class="texto">
+                <b>La influencia inmediata de Aristóteles</b><br>
+    
+                La influencia de Aristóteles se sintió de inmediato cuando el Liceo se convirtió en la escuela peripatética. 
+                Entre sus estudiantes notables se encontraban Aristóxeno, Dicearco de Mesina, Demetrio de Falero, 
+                Eudemo de Rodas, Harpalus, Hefestión, Paléfato y Nicómaco.<br><br>
+    
+                Su impacto también se refleja en Alejandro Magno, quien llevó consigo a una gran cantidad de zoólogos, 
+                botánicos e investigadores durante sus expediciones. Además, aprendió de Aristóteles muchas costumbres 
+                y tradiciones persas. Sin embargo, con el tiempo, su respeto por el filósofo disminuyó, especialmente 
+                al darse cuenta de los errores en la geografía aristotélica.<br><br>
+    
+                En el siglo primero antes de Cristo, el director del Liceo, Andrónico de Rodas, ordenó la conservación de los 
+                escritos de Aristóteles, los cuales han sido transmitidos hasta nuestros días en el 
+                <b>Corpus Aristotelicum</b>.<br><br>
+
+                <b>La influencia en la época romana</b><br>
+                En la Roma antigua, el aristotelismo no alcanzó la misma popularidad que el epicureísmo o el estoicismo. 
+                Sin embargo, Cicerón y Plutarco mencionan a Craso, Staseas y Pupio Pisón como seguidores de las doctrinas aristotélicas. 
+                Otros representantes del peripatetismo romano fueron Temistio y Alejandro de Afrodisia.<br><br>
+
+                Aristóteles también fue estudiado por los neoplatónicos, quienes intentaron fusionar su pensamiento con el de Platón 
+                y con corrientes espirituales del Oriente. Filósofos como Plotino, Porfirio y Simplicio fueron clave en la 
+                transmisión de su legado al cristianismo primitivo.<br><br>
+
+                <b>Aristóteles en la Edad Media</b><br>
+                Durante la Alta Edad Media, el acceso al pensamiento aristotélico en Occidente fue limitado, reduciéndose a la 
+                traducción latina del <b>Órganon</b> realizada por Boecio. Para los escritores cristianos latinos 
+                del siglo cuarto, Aristóteles era principalmente un dialéctico y naturalista, aunque no conocían su metafísica y, 
+                en algunos casos, se oponían a su pensamiento pagano.<br>
+    
+                Fueron los árabes quienes redescubrieron a Aristóteles y lo transmitieron a la filosofía escolástica.<br><br>
+
+                <b>La influencia de Aristóteles en la Edad Moderna</b><br>
+                En el Renacimiento, la autoridad de Aristóteles comenzó a ser cuestionada. Martín Lutero veía a la Iglesia Católica como una 
+                <b>"Iglesia Aristotélica"</b> y se oponía a él, argumentando que su filosofía iba en contra de la gracia divina.<br><br>
+
+                <b>La influencia en la Edad Contemporánea</b>
+                En el siglo diecinueve, hubo un resurgimiento de la metafísica aristotélica con pensadores como Schelling, 
+                Ravaisson, Trendelenburg y Brentano.<br><br>
+
+                Karl Marx lo consideró <b>"el más grande pensador de la antigüedad"</b> y Friedrich Nietzsche también 
+                adoptó aspectos de su pensamiento político.<br><br>
+
+                A pesar de las críticas, Aristóteles sigue siendo una figura clave en la filosofía. Bertrand Russell llegó a decir que 
+                <b>"ha sido una de las grandes desgracias de la raza humana"</b>, mientras que Edward Feser argumenta que 
+                <b>"abandonar el aristotelismo fue el mayor error en la historia del pensamiento occidental"</b>.<br><br>
+
+                <h3>Más de dos mil trescientos años después de su muerte, Aristóteles sigue siendo una de las figuras más influyentes 
+                de la historia del pensamiento.</h3>
+            </p>
+        </div>
+
+
+
+        <div class="test-container">
+            <h3>¿Cuál fue la obra más importante de Aristóteles?</h3>
+
+            <label>
+                <input type="radio" name="respuesta" value="republica"> La República
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="respuesta" value="etica"> Ética a Nicómaco
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="respuesta" value="dialogos"> Diálogos
+            </label>
+
+            <br>
+            <button onclick="verificarRespuesta()">Comprobar</button>
+            <p id="resultado"></p>
+        </div>
+
+        <!-- SCRIPT PARA TEST-CONTAINER-->
+         <script>
+            function verificarRespuesta() {
+                let opciones = document.getElementsByName("respuesta");
+                let respuestaCorrecta = "etica";
+                let resultado = document.getElementById("resultado");
+
+                for(let opcion of opciones) {
+                    if(opcion.checked) {
+                        if(opcion.value === respuestaCorrecta) {
+                            resultado.innerHTML = "¡Correcto! Ética a Nicómaco fue su obra más importante.";
+                            resultado.style.color = "green";
+                                                                }
+                        else{
+                                resultado.innerHTML = "Incorrecto. Intenta de nuevo.";
+                                resultado.style.color = "red";
+                            }
+                        return;
+                                        }
+                                            }
+
+                resultado.innerHTML = "Debes seleccionar una respuesta.";
+                resultado.style.color = "orange";
+                                            }
+         </script>
+
+    </body>
+</html>

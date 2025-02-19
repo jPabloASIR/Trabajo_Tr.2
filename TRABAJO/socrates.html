@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/general.css"/>
+        <link rel="stylesheet" href="estilos/queries.css"/>
+        <link rel="stylesheet" href="estilos/tablas.css"/>
+        <link rel="stylesheet" href="estilos/test.css"/>
+        <link rel="stylesheet" href="estilos/botones.css"/>
+        <title>El Río de la Filosofía - Sócrates</title>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    
+        <script>
+            function mostrarMensaje(id) {
+                let contenedores = document.querySelectorAll('.contenedor-texto');
+            
+                contenedores.forEach(contenedor => {
+                    let texto = contenedor.querySelector('.texto');
+
+                    if(texto.id === id){
+                        if (!contenedor.classList.contains("show")) {
+                            contenedores.forEach(c => c.classList.remove("show"));
+                            contenedor.classList.add("show");
+                            contenedor.scrollIntoView({behavior:"smooth", block:"start"});
+                        }
+                        else {
+                            contenedor.classList.remove("show");
+                        }
+                                        }
+                        else {
+                            contenedor.classList.remove("show");
+                             }
+                    
+                                                    }
+                                    )
+                                        }
+        </script>
+
+    </head>
+
+
+    <body>
+        <ul>
+            <li><a href="index.html" id="indexBtn">PRINCIPAL</a></li>
+            <li class="nav-buttons">
+                <a href="platon.html" id="platonBtn">Platón</a>
+                <a href="socrates.html" id="socratesBtn">Sócrates</a>
+                <a href="aristoteles.html" id="aristotelesBtn">Aristóteles</a>
+            </li>
+    
+            <li><a href="formulario.html" id="formularioBtn">FORMULARIO</a></li>
+        </ul>
+
+        <div class="bienvenida zoom-in">
+            <h1><span style="color: #FF9800;"><b>El Río de la Filosofía</b></span></h1>
+            <p>"Sócrates, El Oráculo de la Razón"</p>
+        </div>
+
+        <!-- IMAGEN-->
+
+
+        <div class="zoom-in" style="display: flex; flex-direction: column; align-items: center;">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/FvMPx82a-NE" frameborder="0" allowfullscreen> </iframe>
+        </div>
+
+
+        <div class="zoom-in" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px">
+            <audio controls>
+                <source src="audio/DocumentalSócrates.mp3" type="audio/mpeg">
+                No se pudo reproducir el audio.
+            </audio>
+        </div>
+
+        <br>
+
+        <div class="contenedor-nuevos-botones">
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('basesFilosofia')">Bases de su Filosofía</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('obras')">Obras</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('vidaPersonal')">Vida Personal</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('masInformacion')">Más Información</button>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="basesFilosofia" class="texto">
+                A diferencia de los filósofos presocráticos, que estaban interesados en explicar el mundo natural, Sócrates dirigió su atención hacia el ser humano y su capacidad de razonar. Su método filosófico, conocido como la mayéutica, consistía en formular preguntas incisivas para ayudar a los interlocutores a descubrir verdades por sí mismos.<br><br> 
+                Sócrates creía que el conocimiento verdadero no podía imponerse, sino que debía ser extraído a través del cuestionamiento constante.<br><br>
+
+                Uno de los principios fundamentales de la filosofía socrática es la idea de que <b>"solo sé que no sé nada"</b>. Esta afirmación refleja su postura epistemológica, según la cual el reconocimiento de la propia ignorancia es el primer paso hacia el conocimiento. Sócrates rechazaba la idea de que el saber pudiera adquirirse de manera pasiva; para él, la búsqueda de la verdad requería un examen riguroso y continuo.<br><br>
+                    
+                En el ámbito de la ética, Sócrates sostenía que la virtud es conocimiento y que el mal es resultado de la ignorancia. Según él, nadie actúa de manera injusta de forma deliberada; si una persona obra mal, es porque no comprende la verdadera naturaleza del bien. Esta visión optimista de la naturaleza humana subraya la importancia de la educación y del autoconocimiento en la formación de ciudadanos virtuosos.
+                    
+                Desde el punto de vista político, Sócrates fue un firme defensor del pensamiento crítico y de la participación activa en los asuntos públicos. Sin embargo, su actitud cuestionadora lo llevó a entrar en conflicto con las autoridades atenienses. En el año 399 a.C., fue acusado de corromper a la juventud y de impiedad.<br><br> Durante su juicio, en lugar de defenderse con discursos halagadores, Sócrates reafirmó sus principios y se negó a retractarse de sus ideas. Fue condenado a muerte y, fiel a su filosofía, aceptó su destino con serenidad, bebiendo la cicuta según la tradición griega.
+            </p>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <table id="obras" class="tabla texto">
+                <thead>
+                    <tr>
+                        <th>Nombre de la Obra</th>
+                        <th>Fecha</th>
+                        <th>Temática</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Apología de Sócrates</td><td>Platón</td><td>Defensa de Sócrates ante su juicio</td></tr>
+                    <tr><td>Critón</td><td>Platón</td><td>Ética y justicia</td></tr>
+                    <tr><td>Eutifrón</td><td>Platón</td><td>Definición de la piedad</td></tr>
+                    <tr><td>Gorgias</td><td>Platón</td><td>Retórica y moral</td></tr>
+                    <tr><td>Menón</td><td>Platón</td><td>La virtud y el conocimiento</td></tr>
+                    <tr><td>Fedón</td><td>Platón</td><td>Inmortalidad del alma</td></tr>
+                    <tr><td>El banquete</td><td>Platón</td><td>Filosofía del amor</td></tr>
+                    <tr><td>República (Libro I)</td><td>Platón</td><td>Definición de justicia</td></tr>
+                    <tr><td>Memorables</td><td>Jenofonte</td><td>Conversaciones de Sócrates</td></tr>
+                    <tr><td>Economico</td><td>Jenofonte</td><td>Diálogo sobre la administración del hogar</td></tr>
+                    <tr><td>Banquete</td><td>Jenofonte</td><td>Conversación sobre el amor</td></tr>
+                    <tr><td>Defensa de Sócrates</td><td>Jenofonte</td><td>Versión alternativa del juicio</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="vidaPersonal" class="texto">
+                <b>Vida</b><br>
+                Sócrates nació en Atenas durante el siglo V a. C., en una época de esplendor para su ciudad natal y para la antigua Grecia. Fue hijo de Sofronisco, un cantero, y de Fenáreta, una comadrona, y tenía parentesco con Arístides, conocido como "el justo".
+                Según Plutarco, cuando Sócrates nació, su padre recibió del oráculo de Delfos el consejo de permitirle crecer libremente, sin restricciones. Sin embargo, ni Jenofonte ni Platón mencionan esta intervención del oráculo, lo que sugiere que podría tratarse de una tradición posterior.<br><br>
+
+                <b>Educación</b><br>
+                Sócrates recibió una educación tradicional en literatura, música y gimnasia. Más adelante, se familiarizó con la dialéctica y la retórica utilizadas por los sofistas. Al principio, siguió la profesión de su padre y realizó un conjunto de estatuas de las tres Gracias, que permanecieron en la entrada de la acrópolis de Atenas hasta el siglo II a. C. Su maestro fue el filósofo Arquelao, quien lo introdujo en la reflexión sobre la física y la moral.<br><br>
+
+                <b>Matrimonio</b><br>
+                Se casó con Xantipa (o Jantipa), quien provenía de una familia noble. Según una tradición antigua, Xantipa trataba mal a Sócrates, aunque Platón, en el Fedón, muestra una relación normal e incluso afectuosa entre ambos.<br><br>
+
+                <b>Vida política y militar</b><br>
+                Aunque Sócrates respetaba las leyes de Atenas, evitaba la política, pues creía que podía servir mejor a su país dedicándose a la filosofía. Presidió la asamblea durante el juicio de los generales y se negó a someter a votación una propuesta inconstitucional (según Platón en la Apología y Jenofonte en Memorabilia). Como prítanis, se opuso a la presión popular cuando la Asamblea, impulsada por demagogos, condenó a muerte a los generales vencedores en la batalla de Arginusas por no haber rescatado a los náufragos.
+                Durante la guerra del Peloponeso contra Esparta, Sócrates sirvió como hoplita con gran valentía en las batallas de Potidea, Delio y Anfípolis. En una de estas batallas, salvó la vida de su pupilo Alcibíades, y en otra ocasión, Alcibíades devolvió el favor rescatando a Sócrates.
+            </p>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="masInformacion" class="texto">
+                La base de las enseñanzas de Sócrates y lo que inculcó fue la creencia en una comprensión objetiva de los conceptos de justicia, amor y virtud; y el conocimiento de uno mismo. Sócrates describió el alma (psique) como aquello en virtud de lo cual se nos califica de sabios o de locos, buenos o malos, una combinación de inteligencia y carácter.<br><br>
+
+                <b>Ironía socrática</b><br>
+                Asumiendo una postura de ignorancia, interrogaba a la gente para luego poner en evidencia la incongruencia de sus afirmaciones; a esto se le denominó "ironía socrática", la cual queda expresada con su célebre frase "Solo sé que no sé nada" (Ἓν οἶδα ὅτι οὐδὲν οἶδα, hèn oîda hóti oudèn oîda) y desde esta humildad intelectual, criticaba a los sofistas por ofrecer su sabiduría a cambio de dinero.<br><br>
+
+                <b>Conocimiento y virtud</b><br>
+                A la vez, fue capaz de llevar tal unidad al plano del conocimiento, al sostener que el conocimiento es virtud y la ignorancia vicio. Su inconformismo lo impulsó a oponerse a la ignorancia popular y al conocimiento de los que se decían sabios, aunque él mismo no se consideraba un sabio. Uno de sus mejores amigos, Querefonte, le preguntó al oráculo de Delfos si había alguien más sabio que Sócrates, y la Pitonisa le contestó que no había ningún griego más sabio que él (Apología 21a). Al escuchar lo sucedido, Sócrates dudó del oráculo, y comenzó a buscar alguien más sabio que él entre los personajes más renombrados de su época, pero se dio cuenta de que en realidad creían saber más de lo que realmente sabían.<br><br>
+
+                <b>Sabiduría y conocimiento</b><br>
+                Filósofos, poetas y artistas, todos creían tener una gran sabiduría, en cambio, Sócrates era consciente tanto de la ignorancia que le rodeaba como de la suya propia. Esto lo llevó a tratar de hacer pensar a la gente y hacerles ver el conocimiento real que tenían sobre las cosas.<br><br>
+
+                <b>Virtud y discusión racional</b><br>
+                Creía que todo vicio es el resultado de la ignorancia y que ninguna persona desea el mal; a su vez, la virtud es conocimiento y aquellos que conocen el bien actuarán de manera justa. Su lógica hizo hincapié en la discusión racional y la búsqueda de definiciones generales. En este sentido influyó en su discípulo Platón y, a través de él, en Aristóteles.<br><br>
+
+                <b>Diálogos y enseñanza</b><br>
+                Creía en la superioridad de la discusión sobre la escritura y, por lo tanto, pasó la mayor parte de su vida de adulto en los mercados y plazas públicas de Atenas, iniciando diálogos y discusiones con todo aquel que quisiera escucharle, a quienes solía responder mediante preguntas. La sabiduría de Sócrates no consiste en la simple acumulación de conocimientos, sino en revisar los conocimientos que se tienen y a partir de ahí construir conocimientos más sólidos.<br><br>
+
+                <b>Influencia y discípulos</b><br>
+                El poder de su oratoria y su facultad de expresión pública eran su fuerte para conseguir la atención de las personas. Otro pensador y amigo influenciado por Sócrates fue Antístenes, el fundador de la escuela cínica de filosofía. Sócrates también fue maestro de Aristipo, que fundó la filosofía cirenaica de la experiencia y el placer, de la que surgió la filosofía más elevada de Epicuro. Tanto para los estoicos como el filósofo griego Epicteto, Sócrates representó la personificación y la guía para alcanzar una vida superior. Tuvo gran influencia en el pensamiento occidental, a través de la obra de su discípulo Platón.<br><br>
+
+                <b>Aportaciones filosóficas</b><br>
+                Aristóteles, discípulo de Platón, señala los dos grandes aportes de Sócrates: el argumento inductivo y la definición general.<br><br>
+
+                <b>Dialéctica</b><br>
+                Fue el verdadero iniciador de la filosofía en cuanto que le dio su objetivo primordial de ser la ciencia que busca en el interior del ser humano. La dialéctica es el método de compartir conocimiento, usado principalmente por Platón, inspirado en la mayéutica de Sócrates. Después de plantear una proposición analizaba las preguntas y respuestas suscitadas por la misma. Esto le convierte en una figura extraordinaria y decisiva; representa la reacción contra el relativismo y subjetivismo sofista, y es un singular ejemplo de unidad entre teoría y conducta, entre pensamiento y acción. Platón adoptó este método en el que por medio del diálogo y la conversación se llega al conocimiento.<br><br>
+
+                <b>Mayéutica</b><br>
+                Privilegió un método, al cual denominó (probablemente evocando a su madre partera) mayéutica, es decir, lograr que el interlocutor descubra sus propias verdades. La mayéutica fue su más grande mérito, método inductivo que le permitía llevar a sus alumnos a la resolución de los problemas que se planteaban por medio de hábiles preguntas cuya lógica iluminaba el entendimiento. Según pensaba, el conocimiento y el autodominio habrían de permitir restaurar la relación entre el ser humano y la naturaleza. Para Sócrates este era un método por medio del cual el alma llegaría al conocimiento, una forma de construir conocimiento a partir de resolver preguntas y una forma de analizar la verdad comparando diferentes opiniones.<br><br>
+
+                <b>Política</b><br>
+                Sócrates discutía sobre la política con sus contemporáneos. Se argumenta que Sócrates creía que "los ideales pertenecen a un mundo que sólo el hombre sabio puede entender", haciendo del filósofo el único tipo de persona adecuada para gobernar a otros. En el diálogo de Platón, la República, Sócrates se oponía abiertamente a la democracia que dirigía Atenas durante su vida adulta. Según él, la democracia ateniense no se encontraba a la altura de un gobierno ideal representado por un perfecto régimen dirigido por filósofos. Sin embargo, es posible que el Sócrates de la República de Platón esté coloreado por las propias opiniones de Platón.<br><br>
+
+                <b>Legado político</b><br>
+                Se ha argumentado que Sócrates aceptó su sentencia de muerte por respeto a las leyes de Atenas. Su compromiso con la verdad y su valentía para expresarla sin temor a las consecuencias lo convirtieron en una de las figuras más influyentes de la historia de la filosofía.<br><br>  
+            </p>
+        </div>
+
+
+
+        <div class="test-container">
+            <h3>¿Cómo murió Sócrates?</h3>
+
+            <label>
+                <input type="radio" name="respuesta" value="batalla"> En batalla
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="respuesta" value="cicuta"> Bebiendo cicuta
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="respuesta" value="vejez"> De vejez
+            </label>
+
+            <br>
+            <button onclick="verificarRespuesta()">Comprobar</button>
+            <p id="resultado"></p>
+        </div>
+
+        <!-- SCRIPT PARA TEST-CONTAINER-->
+        <script>
+            function verificarRespuesta() {
+                let opciones = document.getElementsByName("respuesta");
+                let respuestaCorrecta = "cicuta";
+                let resultado = document.getElementById("resultado");
+
+                for(let opcion of opciones) {
+                    if(opcion.checked) {
+                        if(opcion.value === respuestaCorrecta) {
+                            resultado.innerHTML = "¡Correcto! Sócrates murió bebiendo cicuta.";
+                            resultado.style.color = "green";
+                                                                }
+                        else{
+                                resultado.innerHTML = "Incorrecto. Intenta de nuevo.";
+                                resultado.style.color = "red";
+                            }
+                        return;
+                                        }
+                                            }
+
+                resultado.innerHTML = "Debes seleccionar una respuesta.";
+                resultado.style.color = "orange";
+                                            }
+         </script>
+
+    </body>
+</html>

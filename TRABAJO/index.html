@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/general.css"/>
+        <link rel="stylesheet" href="estilos/queries.css"/>
+        <link rel="stylesheet" href="estilos/botones.css"/>
+        <link rel="stylesheet" href="estilos/carousel.css">
+        
+        <title>El Río de la Filosofía</title>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+
+        
+        <script>
+            function mostrarMensaje(id) {
+                let mensaje = document.getElementById(id);
+                if (mensaje.style.display === "none" || mensaje.style.display === "") {
+                    mensaje.style.display = "block";}
+                    else {
+                        mensaje.style.display = "none";
+                    }
+            }
+        </script>
+
+<style>
+    .carousel-container {
+        width: 500px;  
+        height: 500px; 
+        margin: auto;  
+                        }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+                        }
+</style>
+
+        <!-- REINICIAR ANIMACIÓN DE APARICIÓN-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let elementos = document.querySelectorAll(".aparece");
+
+                elementos.forEach(el => {
+                    el.style.opacity = "0"
+                    setTimeout(() => {
+                        el.style.animation = "none";
+                        void el.offsetWidth;
+                        el.style.animation = "slideIn 1s ease-out forwards";
+                    }, 100);
+                });
+            });
+        </script>
+
+    </head>
+
+
+
+    <body>
+            <ul>
+                <li><a href="index.html" id="indexBtn">PRINCIPAL</a></li>
+                <li class="nav-buttons">
+                    <a href="socrates.html" id="socratesBtn">Sócrates</a>
+                    <a href="platon.html" id="platonBtn">Platón</a>
+                    <a href="aristoteles.html" id="aristotelesBtn">Aristóteles</a>
+                </li>
+                <li><a href="formulario.html" id="formularioBtn">FORMULARIO</a></li>
+            </ul>
+        
+
+        <div class="bienvenida zoom-in">
+            <h1>Bienvenido a <span style="color: #FF9800;"><b>El Río de la Filosofía</b></span></h1>
+            <p>Sumérgete en las aguas del pensamiento y descubre las ideas que han moldeado el mundo</p>
+        </div>
+
+
+
+        <div class="carousel-container zoom-in">
+            <img class="decoracion izquierda" src="imagen/filosofos2.png" alt="Filósofo Izq">
+
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagen/carousel1.jpg" alt="Sócrates">
+                        <div class="carousel-caption">
+                            <h3><b>Filosofía</b></h3>
+                            <p><b>El estudio del conocimiento, la realidad y la existencia</b></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagen/carousel2.jpg" alt="Aristóteles">
+                        <div class="carousel-caption">
+                            <h3><b>Filosofía</b></h3>
+                            <p><b>Cuestionar, analizar y comprender el mundo y nuestro lugar en él</b></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagen/carousel3.jpg" alt="Río">
+                        <div class="carousel-caption">
+                            <h3><b>Filosofía</b></h3>
+                            <p><b>Sé bienvenido/a</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <img class="decoracion derecha" src="imagen/filosofos3.png" alt="Filósofo Drcha">
+        </div>
+
+        <div class="descripcion">
+            <p class="zoom-in">
+                Esta página es un espacio para explorar las ideas y el legado de los tres grandes filósofos.
+                Aquí encontrarás información sobre sus pensamientos, obras y contribuciones al mundo del conocimiento.
+            </p>
+        </div>
+
+        <br>
+
+        <div class="imagen-filosofos">
+            <img src="imagen/filosofos.jpg" alt="Filósofos clásicos">
+        </div>
+
+        <br>
+
+        <div class="contenedor-botones">
+            <div class="filosofo">
+                <button onclick="mostrarMensaje('socrates')">Sócrates</button>
+                <blockquote id="socrates" class="mensaje">"Solo sé que no sé nada."</blockquote>
+            </div>
+
+            <div class="filosofo">
+                <button onclick="mostrarMensaje('platon')">Platón</button>
+                <blockquote id="platon" class="mensaje">"La filosofía es un silencioso diálogo del alma consigo misma."</blockquote>
+            </div>
+
+            <div class="filosofo">
+                <button onclick="mostrarMensaje('aristoteles')">Aristóteles</button>
+                <blockquote id="aristoteles" class="mensaje">"Somos lo que hacemos repetidamente."</blockquote>
+            </div>
+        </div>
+        <br>
+    </body>
+</html>

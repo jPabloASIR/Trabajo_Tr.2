@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/general.css"/>
+        <link rel="stylesheet" href="estilos/queries.css"/>
+        <link rel="stylesheet" href="estilos/tablas.css"/>
+        <link rel="stylesheet" href="estilos/test.css"/>
+        <link rel="stylesheet" href="estilos/botones.css"/>
+        <title>El Río de la Filosofía - Platón</title>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    
+        <script>
+            function mostrarMensaje(id) {
+                let contenedores = document.querySelectorAll('.contenedor-texto');
+            
+                contenedores.forEach(contenedor => {
+                    let texto = contenedor.querySelector('.texto');
+
+                    if(texto.id === id){
+                        if (!contenedor.classList.contains("show")) {
+                            contenedores.forEach(c => c.classList.remove("show"));
+                            contenedor.classList.add("show");
+                            contenedor.scrollIntoView({behavior:"smooth", block:"start"});
+                        }
+                        else {
+                            contenedor.classList.remove("show");
+                        }
+                                        }
+                        else {
+                            contenedor.classList.remove("show");
+                             }
+                    
+                                                    }
+                                    )
+                                        }
+        </script>
+    
+    </head>
+
+
+    <body>
+        <ul>
+            <li><a href="index.html" id="indexBtn">PRINCIPAL</a></li>
+            <li class="nav-buttons">
+                <a href="platon.html" id="platonBtn">Platón</a>
+                <a href="socrates.html" id="socratesBtn">Sócrates</a>
+                <a href="aristoteles.html" id="aristotelesBtn">Aristóteles</a>
+            </li>
+    
+            <li><a href="formulario.html" id="formularioBtn">FORMULARIO</a></li>
+        </ul>
+
+        <div class="bienvenida zoom-in">
+            <h1><span style="color: #FF9800;"><b>El Río de la Filosofía</b></span></h1>
+            <p>"Platón, El Forjador de Ideas"</p>
+        </div>
+
+        <!-- IMAGEN -->
+
+
+        <div class="zoom-in" style="display: flex; flex-direction: column; align-items: center;">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/eqMcUGXsRHE" frameborder="0" allowfullscreen> </iframe>
+        </div>
+
+
+        <div class="zoom-in" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px">
+            <audio controls>
+                <source src="audio/DocumentalPlaton.mp3" type="audio/mpeg">
+                No se pudo reproducir el audio.
+            </audio>
+        </div>
+
+        <br>
+
+        <div class="contenedor-nuevos-botones">
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('basesFilosofia')">Bases de su Filosofía</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('obras')">Obras</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('vidaPersonal')">Vida Personal</button>
+            <button class="nuevo-boton zoom-in" onclick="mostrarMensaje('masInformacion')">Más Información</button>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="basesFilosofia" class="texto">
+                <b>Teología</b><br>
+                Es posible que el pensamiento platónico tuviese una amplia gama de elementos teológicos o religiosos. Estos elementos podrían ser la base de sus planteamientos ontológicos, gnoseológicos, políticos y epistemológicos. Incluso, en el diálogo Timeo Platón presenta una teoría cosmogónica y religiosa.
+                Esta religión fue seguramente adoptada de Sócrates y debe tener relación con el juicio (debido a que en la exposición de motivos al castigo sentenciado se encuentran el corromper a la juventud y la asebeia: traer nuevos dioses y negar los ya existentes). Probablemente contenía elementos monoteístas (presentes en la "Verdad" máxima o el "Bien" máximo que se encuentra en sus teorías ontológicas y políticas) y órficos (debido a la reencarnación del alma). En sus diálogos de juventud, Sócrates aparece defendiendo ciertas creencias religiosas como que los dioses son completamente buenos y que nadie sabe realmente qué sucede después de la muerte.
+                Las teorías teológicas de Platón posiblemente eran esotéricas (secretas). Incluso en la Carta VII Platón afirma: «No hay ni habrá nunca una obra mía que trate estos temas [...] Cualquier persona cabal se guardaría mucho de confiar por escrito cuestiones serias, exponiéndolas a la malevolencia de la gente» (341c). Estos comentarios de Platón hacen pensar que aquello que dejó en escrito no es, para él, suficientemente "serio". Según confesiones de Aristóteles en Sobre el bien, el estarigita no tenía acceso a estas doctrinas, a diferencia de Epeusipo y Jenócrates —lo cual daría una idea de por qué Aristóteles abandonó la Academia—.
+                En el Fedón, Platón relata como Sócrates estaba ilusionado por la tesis de un mundo ordenado por la Inteligencia de Anaxágoras pero le disgustaron sus explicaciones puramente mecanicistas, prefiriendo explicaciones teleológicas. Esta distinción entre causas materiales y finales la expondrá más adelante Aristóteles.<br>
+
+                Platón condenó el ateísmo (entendido como un atomismo) en la República. Diógenes Laercio cita la anécdota que Platón detestaba tanto a Demócrito que deseaba que todos sus libros fuesen quemados. Arguyó que el universo no surgió de la combinación azarosa de elementos corpóreos sin ninguna inteligencia detrás. Usó una especie de argumento cosmológico a favor de una fuente del movimiento que se mueve por sí mismo, que es el espíritu o el alma, la fuente del movimiento cósmico. Dios es para Platón el ser absoluto, bien supremo, creador de las cosas.<br><br>
+
+                <b>Ontología y Metafísica</b><br>
+                En los diálogos de Platón se discuten varios temas y conceptos metafísicos como el ser, la existencia, la naturaleza, el alma y el cuerpo. 
+                En su teoría de las formas, Platón decía que la realidad solo puede ser entendida por la comprensión racional de formas o ideas universales abstractas. Cada idea es única e inmutable; al contrario, las cosas materiales son múltiples y cambiantes, siendo solo unas "sombras" de esas formas ideales. 
+                En los Libros VI y VII de la República, Platón utiliza diversas metáforas para explicar sus ideas metafísicas y epistemológicas: las metáforas del sol, la muy conocida "alegoría de la caverna" y, la más explícita, la de la línea dividida. En su conjunto, estas metáforas transmiten teorías complejas y difíciles; está, por ejemplo, la Idea del Bien, a la que tiene como principio de todo ser y de todo conocer. 
+                La Idea de Bien realiza esto en la manera similar que el sol emana luz y permite la visión de las cosas y la generación de estas en el mundo perceptivo (ver la alegoría del sol).<br><br>
+
+                <b>Dualismo Platónico</b><br>
+                El platonismo ha sido interpretado como una forma de dualismo metafísico, a veces referido como realismo platónico o exagerado. De acuerdo a esto, la metafísica de Platón divide al mundo en dos distintos aspectos:
+                El mundo inteligible, que reside el auténtico ser, inmutable, de formas u objetos abstractos;
+                El mundo sensible, que vemos alrededor nuestro en forma perceptiva, cambiante y copia imperfecta de las formas inteligibles o Ideas.
+                Platón estableció así el dualismo fundamental de la filosofía, la distinción entre idealismo y materialismo, entre esencias eternas abstractas y existencias efímeras concretas, entre el ser parmenideano y el cambio heráclito. Esta división ontológica lleva también a Platón una dualidad en su antropológica y epistemológica.<br>
+
+                A pesar de muchas críticas sobre su dualismo, Platón se refiere en el Timeo a un único universo donde se encuentra tanto la materia sensible como las formas inmateriales (ver Cosmología). A modo pedagógico desdobla el universo en dos y, como quien saca una foto de un paisaje, describe una realidad compleja en dos dimensiones. 
+                Así, quien mira el paisaje se dará cuenta que es imposible que el paisaje 'sea' meramente lo que la fotografía muestra. Sin embargo, un objeto natural no es propiamente una copia "fotográfica" de las Ideas (pues éstas pertenecen a un orden distinto del de las cosas físicas) sino más bien una imaginativa y simbólica transmisión de éstas.<br><br>
+                
+                <b>Las Formas</b><br>
+                Las "Formas" o "Ideas" (en griego: morphé y eîdos) son esencias o entidades trascendentes, unitariasn. e inmutables que estructuran la pluralidad de las cosas. Las Formas están fuera del tiempo, como el mundo nouménico de Immanuel Kant. Solo son comprensibles a través del intelecto o entendimiento, es decir, la capacidad de pensar las cosas abstrayéndolas de como se nos dan a los sentidos. 
+                Las ideas son el ser de la cosa y son subsistentes, existen por sí mismas, no solo en la mente humana. Por ejemplo, en matemáticas, el círculo ideal consiste en un número infinito de puntos infinitesimales. Tal infinito nunca se realiza en el mundo material, luego podría decirse que un círculo ideal tiene una naturaleza inmutable y eterna.<br>
+
+                Por lo tanto, las Forma de Platón son universales y representan la verdadera realidad de las cosas en sí mismas, así como propiedades, patrones y relaciones, a los que nos referimos como objetos. Por ejemplo, las cosas justas y bellas nos llevan a la Idea de justicia y belleza, las cuales si no existieran, no existirían tales cosas. Como no se manifiestan en sí mismas en este mundo y solo se perciben mediante la intuición directa por la razón, deben de existir en otro, separado al nuestro. Según Platón, la "Idea de Bien" es la Forma suprema, "causa de la ciencia y de la verdad", la cual "proporciona la verdad a los objetos del conocimiento y la facultad de conocer al que conoce".
+            </p>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <table id="obras" class="tabla texto">
+                <thead>
+                    <tr>
+                        <th>Nombre de la Obra</th>
+                        <th>Fecha</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Apología de Sócrates</td><td>399 a.C.</td><td>Diálogos socráticos</td></tr>
+                    <tr><td>Critón</td><td>399 a.C.</td><td>Diálogos socráticos</td></tr>
+                    <tr><td>Ion</td><td>395 a.C.</td><td>Estética</td></tr>
+                    <tr><td>Protágoras</td><td>390 a.C.</td><td>Ética</td></tr>
+                    <tr><td>Gorgias</td><td>380 a.C.</td><td>Ética y retórica</td></tr>
+                    <tr><td>Menón</td><td>380 a.C.</td><td>Epistemología</td></tr>
+                    <tr><td>Fedón</td><td>375 a.C.</td><td>Metafísica</td></tr>
+                    <tr><td>El banquete</td><td>375 a.C.</td><td>Filosofía del amor</td></tr>
+                    <tr><td>República</td><td>370 a.C.</td><td>Filosofía política</td></tr>
+                    <tr><td>Fedro</td><td>370 a.C.</td><td>Retórica</td></tr>
+                    <tr><td>Parménides</td><td>365 a.C.</td><td>Metafísica</td></tr>
+                    <tr><td>Teeteto</td><td>360 a.C.</td><td>Epistemología</td></tr>
+                    <tr><td>El sofista</td><td>360 a.C.</td><td>Ontología</td></tr>
+                    <tr><td>El político</td><td>355 a.C.</td><td>Filosofía política</td></tr>
+                    <tr><td>Timeo</td><td>350 a.C.</td><td>Cosmología</td></tr>
+                    <tr><td>Crátilo</td><td>350 a.C.</td><td>Filosofía del lenguaje</td></tr>
+                    <tr><td>Leyes</td><td>347 a.C.</td><td>Filosofía política</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="vidaPersonal" class="texto">
+                <b>Vida</b><br>
+                Platón nació hacia el año 427 a. C. en Atenas o en la isla de Egina, en el seno de una familia aristocrática ateniense. Era hijo de Aristón, quien se decía descendiente de Codro, el último de los reyes de Atenas, y de Perictione, cuya familia estaba emparentada con Solón. Era hermano menor de Glaucón y de Adimanto, hermano mayor de Potone (madre de Espeusipo, su futuro discípulo y sucesor en la dirección de la Academia) y medio-hermano de Antifonte (pues Perictione, luego de la muerte de Aristón, se casó con Pirilampes y tuvo un quinto hijo). Critias y Cármides, miembros de la dictadura oligárquica de los Treinta Tiranos, que usurpó el poder en Atenas después de la guerra del Peloponeso, eran, respectivamente, tío y primo de Platón por parte de su madre. En consonancia con su origen, Platón fue un acérrimo antidemócrata (véanse sus escritos políticos: República, Político, Leyes); con todo, ello no le impidió rechazar las violentas acciones que habían cometido sus parientes oligárquicos y rehusar participar en su gobierno.<br><br>
+
+                <b>Nombre</b><br>
+                Su nombre verdadero fue Aristocles. «Platón» fue, al parecer, el apodo que le puso su profesor de gimnasia y que se traduce como aquel que tiene anchas espaldas, según recoge Diógenes Laercio en Vida de los filósofos ilustres.<br><br>
+
+                <b>Educación</b><br>
+                Platón era un luchador y su nombre viene por su espalda ancha. Herma del Museo Capitolino, Roma.
+                Espeusipo, sobrino de Platón, elogia la rapidez mental y la modestia que tuvo de niño, así como su amor por el estudio. En su juventud se habría interesado por artes como la pintura, la poesía y el drama; de hecho, se conserva un conjunto de epigramas que suelen ser aceptados como auténticos, y la tradición refiere que había escrito o tenía interés en escribir tragedias, afán que habría abandonado al comenzar a frecuentar a Sócrates, —nótense las duras críticas que Platón hace de las artes en República—, fundamentando su parcial expulsión del Estado ideal. También, según se ve en su teoría educativa, siempre se interesó por la gimnasia y los ejercicios corporales, y ciertas fuentes refieren que se habría dedicado a las prácticas atléticas; habría participado asimismo en algunas batallas de la guerra del Peloponeso y de la guerra de Corinto, pero no hay información al respecto más que simples menciones del caso.
+                En cuanto a su formación intelectual temprana, Aristóteles refiere que, antes de conocer a Sócrates, Platón había tratado con el heraclíteo Crátilo y sus ideas de que todo lo sensible está en devenir y, por tanto, de que no es posible el conocimiento científico acerca de ello; pero que luego, influido por Sócrates y su enseñanza e insistencia en inquirir y definir qué es cada cosa para poder hablar de ella con propiedad, se convenció de que había realidades cognoscibles y, por tanto, permanentes, y decidió que no eran de naturaleza sensible —el ámbito de lo que siempre deviene y nunca es— sino de naturaleza inteligible. Este es, según Aristóteles, el origen de la teoría de las Ideas, y su información nos permite reconstruir algo del itinerario biográfico-intelectual de Platón.<br><br>
+
+                <b>Encuentro con Sócrates y viajes</b><br>
+                Según Diógenes Laercio, Platón conoció a Sócrates a la edad de 20 años, aunque el historiador W. K. C. Guthrie se muestra convencido de que ya lo frecuentaba con anterioridad. De cualquier modo, puede acordarse en que el primer encuentro se produjo entre el 412 y el 407 (es decir, entre los quince y los veinte años de Platón). A partir de allí, fue uno de los miembros más cercanos del círculo socrático hasta que en 399, Sócrates, que contaba unos setenta años, fue condenado a la pena de muerte por el tribunal popular ateniense, acusado por los ciudadanos Ánito y Meleto de "impiedad" (es decir, de no creer en los dioses o de ofenderlos) y de "corromper a la juventud".
+                Luego de la pérdida de Sócrates, Platón, que tenía solo veintiocho años, se retiró con algunos otros de los discípulos de su maestro a Megara, Sicilia, a la casa de Euclides (socrático, fundador de la escuela megárica). De allí habría viajado a Cirene, donde se reunió con el matemático Teodoro (personificado en el Teeteto) y con Arisitipo (socrático también, fundador de la escuela cirenaica) y a Egipto, aunque estos dos últimos viajes son puestos en duda por muchos especialistas.<br><br>
+
+                <b>Academia y vejez</b><br>
+                Mosaico del siglo I hallado en Pompeya que representa a la Academia de Platón. Actualmente en el Museo Arqueológico Nacional de Nápoles.
+                A la vuelta de Sicilia, se estima que al poco tiempo, Platón compró una finca en las afueras de Atenas, en un emplazamiento dedicado al héroe Academo, y fundó allí la Academia. Esta funcionó como tal ininterrumpidamente hasta el año 86 a. C. Al ser destruida por los romanos, fue restituida y continuada por los platónicos hasta que en el 529 d. C. Fue cerrada definitivamente por Justiniano I, quien veía en las escuelas paganas una amenaza para el cristianismo y ordenó su erradicación completa.
+                Numerosos filósofos se formaron en esta milenaria Academia, incluyendo el mismo Aristóteles durante la dirección de Platón, junto a quien trabajó alrededor de veinte años, hasta la muerte de su maestro.
+                Platón también recibió influencias de otros filósofos, como Pitágoras, cuyas nociones de armonía numérica y geomatemática se hacen eco en la noción de Platón sobre las Formas; también Anaxágoras, quien enseñó a Sócrates y que afirmaba que la inteligencia o la razón penetra o llena todo; y Parménides, que argüía acerca de la unidad de todas las cosas y quien influyó sobre el concepto de Platón acerca del alma.
+                Platón murió en el 347 a. C., a los 80/81 años de edad, dedicándose en sus últimos años de vida a impartir enseñanzas en la academia de su ciudad natal. En 2024 fue anunciado el hallazgo de su tumba, en un jardín cerca de una capilla dedicada a las musas en su escuela, un detalle confirmado en un pergamino que contiene la Historia de la Academia de Filodemo de Gadara.<br><br>
+            </p>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <p id="masInformacion" class="texto">
+                <h3>Epistemología y Gnoseología</h3><br>
+                <b><br>Conocimiento de las cosas sensibles (Doxa)</b><br> 
+                Es denominado por Platón doxa (opinión o aparición) la percepción del mundo sensible, camino entre lo verdadero y la ignorancia. Ya que no posee verdadera entidad, tampoco puede haber auténtico conocimiento sino mera opinión. A su vez la opinión tiene dos modos: divide en creencias (pistis) y conocimiento de la apariencia o imaginación (eikasía).<br><br>
+
+                <b><br>La imaginación (Eikasía)</b><br>
+                Mediante la eikasía o imaginación se aprenden las imágenes de las cosas, sus sombras y reflejos, siendo el grado más bajo de la escala del conocimiento. No podemos imaginar un objeto dotado de menos consistencia que la fugacidad extrema de una sombra. Posiblemente Platón esté pensando en actividades como la poesía, la pintura o la retórica. Efectivamente, tanto el orador como el poeta o el pintor están solo interesados en una mera imitación verosímil de la realidad y para esto les basta con la producción de imágenes.<br><br>
+                
+                <b><br>La creencia (Pistis)</b><br>
+                En la pistis hay un grado de conocimiento superior al anterior, ya que versa sobre un objeto mismo y no sobre una imagen de este. Las diversas artes productoras, como por ejemplo la carpintería, encajarían aquí perfectamente: el carpintero sabe más en relación con la mesa que el pintor que la representa en un lienzo, porque a este le basta con una mera apariencia verosímil de la mesa, mientras que el carpintero ha de fabricar una mesa "real".<br><br>
+                
+                <b><br>Conocimiento inteligible (Episteme)</b><br> 
+                La episteme (ciencia) es el verdadero conocimiento, que viene de la verdadera realidad inmutable de las Ideas. Tiene como objeto la realidad inteligible, el ser perfecto e inmutable: las ideas. También aquí hay dos grados, el conocimiento discursivo (diánoia) y la inteligencia pura (nous)<br><br>
+                
+                <b><br>Conocimiento discursivo (Diánoia)</b><br> 
+                Como ejemplo de diánoia, Platón piensa en la aritmética o en la geometría. En ambas se parte siempre de hipótesis o presuposiciones y se necesita (piensa Platón) de símbolos sensibles. La matemática procede según un tipo de razonamiento que podríamos denominar "hipotético-deductivo", es decir, se va de la hipótesis a la conclusión mediante deducción.<br><br>
+                
+                <b><br>Conocimiento o inteligencia pura (Nous)</b><br> 
+                El nous es la superación de la diánoia mediante la dialéctica, considerada como la "culminación de todas las ciencias". Se trata de suponer lo que queremos y discutir esa tesis mediante un diálogo introspectivo o con otra persona. Solo ella es capaz de cancelar el carácter meramente hipotético de los principios utilizados en las restantes disciplinas, al dar razón de ellos y justificarlos racionalmente. Para conseguirlo, la dialéctica tiene que remontarse a un principio no hipotético desde el que pueda deducir, a manera de consecuencias, todo lo demás. Es claro que este principio no hipotético, objeto de la dialéctica, no es otro que la idea del Bien. Mediante ella se alcanza el conocimiento de la estructura relacional de las ideas, y en último término, el conocimiento de la verdad suprema, condición (fundamento) de las propias ideas y, por tanto, también del mundo sensible: <b>La idea del Bien</b>
+            </p>
+        </div>
+
+
+
+        <div class="test-container">
+            <h3>¿Quién fue el maestro de Platón?</h3>
+
+            <label>
+                <input type="radio" name="respuesta" value="aristoteles"> Aristóteles
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="respuesta" value="socrates"> Sócrates
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="respuesta" value="descartes"> Descartes
+            </label>
+
+            <br>
+            <button onclick="verificarRespuesta()">Comprobar</button>
+            <p id="resultado"></p>
+        </div>
+
+        <!-- SCRIPT PARA TEST-CONTAINER-->
+         <script>
+            function verificarRespuesta() {
+                let opciones = document.getElementsByName("respuesta");
+                let respuestaCorrecta = "socrates";
+                let resultado = document.getElementById("resultado");
+
+                for(let opcion of opciones) {
+                    if(opcion.checked) {
+                        if(opcion.value === respuestaCorrecta) {
+                            resultado.innerHTML = "¡Correcto! Sócrates fue el maestro de Platón.";
+                            resultado.style.color = "green";
+                                                                }
+                        else{
+                                resultado.innerHTML = "Incorrecto. Intenta de nuevo.";
+                                resultado.style.color = "red";
+                            }
+                        return;
+                                        }
+                                            }
+
+                resultado.innerHTML = "Debes seleccionar una respuesta.";
+                resultado.style.color = "orange";
+                                            }
+         </script>
+
+    </body>
+</html>

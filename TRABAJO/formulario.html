@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widt=device width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/general.css"/>
+        <link rel="stylesheet" href="estilos/botones.css"/>
+        <link rel="stylesheet" href="estilos/test.css"/>
+        <title>Filosofía - Formulario</title>
+
+    </head>
+
+    <body>
+        <ul class="menu">
+            <li><a href="index.html" id="indexBtn">PRINCIPAL</a></li>
+            <li class="nav-buttons">
+                <a href="socrates.html" id="socratesBtn">Sócrates</a>
+                <a href="platon.html" id="platonBtn">Platón</a>
+                <a href="aristoteles.html" id="aristotelesBtn">Aristóteles</a>
+            </li>
+            <li><a href="formulario.html" id="formularioBtn">FORMULARIO</a></li>
+        </ul>
+
+        <h2>Registrar Cuenta</h2>
+
+        <form id="myForm" action="/submit-form" method="post">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label form="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label form="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label form="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+
+                <label form="age">Edad:</label>
+                <input type="number" id="age" name="age" min="1" max="100" required>
+                <br><br>
+
+                <label form="bio">Biografía:</label>
+                <textarea id="bio" name="bio" rows="4" cols="30"></textarea>
+                <br><br>
+
+                <label for="gender">Género:</label>
+                <select id="gender" name="gender">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                <br><br>
+
+                <label>Preferencias:</label>
+                <input type="checkbox" id="news" name="news" value="yes">
+                <label for="news">Quiero recibir noticias</label>
+                <br><br>
+
+                <label>Seleccionar tu color favorito:</label>
+                <input type="color" id="favcolor" name="favcolor">
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <!-- EXPLICACIÓN DEL SCRIPT-->
+        <script>
+            document.getElementById("myForm").addEventListener("submit", function(event){
+                event.preventDefault();
+                alert("Formulario enviado correctamente (Simulación)");
+            });
+        </script>
+
+    </body>
+</html>
